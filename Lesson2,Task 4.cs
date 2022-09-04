@@ -1,16 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Lesso
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-			Random random = new Random();
+	    Random random = new Random();
 
             int minValue = 1;
             int maxValue = 101;
