@@ -16,6 +16,7 @@ namespace ConsoleApp8
             string writeName;
             string userInput;
             string control = "лох";
+            
             while (control!="exit")
             {
                 Console.WriteLine("Выберите команду:\n\nУстановить имя - SetName;\n" +
@@ -28,7 +29,6 @@ namespace ConsoleApp8
                        name = Console.ReadLine();
                         Console.Clear();
                         Console.WriteLine("Имя установлено...");
-
                         break;
                     case "ChangeConsoleColor":
                         Console.BackgroundColor = ConsoleColor.Red;
@@ -41,27 +41,22 @@ namespace ConsoleApp8
                     case "WriteName":
                         Console.WriteLine("Введите пароль!");
                         writeName = Console.ReadLine();
-
-                        if (password == writeName)
-                        {
-                         Console.WriteLine(name);
-                        }
-                        else
-                        {
-                            Console.WriteLine("Неверный пароль");
-                        }
                         
-                        break;
+                            if (password == writeName)
+                                   {
+                               Console.WriteLine(name);
+                                   }
+                            else
+                                   {
+                            Console.WriteLine("Неверный пароль");
+                                   }
+                           break;
                     case "Esc":
                         control = "exit";
-                        break;
-
+                           break;
+                    }
+                 Console.WriteLine("Программа запвершена...");
                 }
-                Console.WriteLine("Программа запвершена...");
-
-
-            }
-        }
-        
-    }
-}
+           }
+       }
+   }
