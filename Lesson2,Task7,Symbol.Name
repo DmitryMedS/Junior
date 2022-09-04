@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +12,7 @@ namespace ConsoleApp9
         {
             string symbol;
             string name;
+            
             Console.WriteLine("Введите символ");
             symbol = Console.ReadLine(); 
             Console.WriteLine("Введите имя");
@@ -19,18 +20,12 @@ namespace ConsoleApp9
             for(int i = 0; i < name.Length+2; i++)
             {
                 Console.Write(symbol);
-                
-
             }
-
-           Console.WriteLine("\n"+symbol + name + symbol);
+            Console.WriteLine("\n"+symbol + name + symbol);
             for (int i = 0; i < name.Length + 2; i++)
             {
                 Console.Write(symbol);
-
-
             }
-
         }
     }
 }
