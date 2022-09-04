@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Lesson2.Task2
 {
     internal class Program
@@ -11,12 +6,11 @@ namespace Lesson2.Task2
         static void Main(string[] args)
         {
             string isWorking= "";
-            string completion = "exit";
+            string exit = "exit";
 
             while (isWorking != completion)
             {
-                Console.WriteLine("Программа выполняется");
-                Console.WriteLine("Для выхода введите - exit");
+                Console.WriteLine("Программа выполняется \nДля выхода введите - exit");
                 isWorking = Console.ReadLine();
             }
            Console.WriteLine("Программа завершена");
