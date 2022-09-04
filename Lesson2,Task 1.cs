@@ -10,18 +10,17 @@ namespace Lesson2.Task1
     {
         static void Main(string[] args)
         {
+            int countWrite;
+            int isWork = 0;
             string name = "Дмитрий";
             Console.WriteLine("Сколько раз мне повторить твое имя");
-            int countWrite;
-            int canWorking = 0;
             countWrite = Convert.ToInt32(Console.ReadLine());
-            while (canWorking<countWrite)
+
+            while (isWork < countWrite)
             {
-                canWorking++;
+                isWork++;
                 Console.WriteLine(name);
             }
-
-            
         }
     }
 }
