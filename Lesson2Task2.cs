@@ -12,13 +12,14 @@ namespace Lesson2.Task2
         {
             string isWorking= "";
             string completion = "exit";
+
             while (isWorking != completion)
             {
                 Console.WriteLine("Программа выполняется");
                 Console.WriteLine("Для выхода введите - exit");
                 isWorking = Console.ReadLine();
             }
-            Console.WriteLine("Программа завершена");
+           Console.WriteLine("Программа завершена");
         }
     }
 }
