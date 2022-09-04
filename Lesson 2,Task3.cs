@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace ConsoleApp5
 {
     internal class Program
@@ -14,18 +9,20 @@ namespace ConsoleApp5
             int minValue = 5;
             int maxValue = 101;
             int number = rnd.Next(minValue, maxValue);
-            int sum = 0;
+            int summ = 0;
+            int multipleNumber1 = 3;
+            int multipleNumber2 = 5;
 
             Console.WriteLine(number);
 
             for (int i = 1; i < number; i++)
                 {
-                   if (i % 3 == 0)
+                   if (i % multipleNumber1 == 0)
                      {
                          sum += i;
                     Console.WriteLine(i);
                       }
-                 if (i % 5 == 0)
+                 if (i % multipleNumber2 == 0)
                       {
                     sum += i;
                     Console.WriteLine(i);
@@ -33,11 +30,7 @@ namespace ConsoleApp5
                 }
             Console.WriteLine(sum);
                 }
-
-
-            }
-            Console.WriteLine(sum);
-
+             }
         }
     }
 }
