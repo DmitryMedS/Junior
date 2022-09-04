@@ -23,6 +23,7 @@ namespace ConsoleApp7
             float currencyCount;
             int userInput = 0;
             bool control = true;
+            
             Console.WriteLine("количество рублей");
             rub = Convert.ToSingle(Console.ReadLine());
             Console.WriteLine("количество долларов");
@@ -77,8 +78,7 @@ namespace ConsoleApp7
                             Console.WriteLine(" Недопустимое кол-во рублей.");
                         }
                         Console.WriteLine("Ваш баланс " + rub + " рублей " + usd + " долларов");
-
-                        break;
+                       break;
                     case 3:
                         Console.WriteLine("Обмен евро на рубли");
                         Console.WriteLine("Сколько хотите обменять?");
@@ -93,8 +93,7 @@ namespace ConsoleApp7
                             Console.WriteLine(" Недопустимое кол-во долларов.");
                         }
                         Console.WriteLine("Ваш баланс " + rub + " рублей " + euro + " евро");
-
-                        break;
+                       break;
                     case 4:
                         Console.WriteLine("Обмен рублей на евро");
                         Console.WriteLine("Сколько хотите обменять?");
@@ -109,7 +108,6 @@ namespace ConsoleApp7
                             Console.WriteLine(" Недопустимое кол-во рублей.");
                         }
                         Console.WriteLine("Ваш баланс " + rub + " рублей " + euro + " евро");
-
                         break;
                     case 5:
                         Console.WriteLine("Обмен юаней на рубли");
@@ -125,7 +123,6 @@ namespace ConsoleApp7
                             Console.WriteLine(" Недопустимое кол-во долларов.");
                         }
                         Console.WriteLine("Ваш баланс " + rub + " рублей " + cny + " юаней");
-
                         break;
                     case 6:
                         Console.WriteLine("Обмен рублей на юани");
@@ -141,7 +138,6 @@ namespace ConsoleApp7
                             Console.WriteLine(" Недопустимое кол-во рублей.");
                         }
                         Console.WriteLine("Ваш баланс " + rub + " рублей " + cny + " юаней");
-
                         break;
                     case 7:
                         control = false;
