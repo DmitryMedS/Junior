@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace ConsoleApp7
 {
     internal class Program
@@ -36,13 +31,9 @@ namespace ConsoleApp7
             while (control == true)
             {
             Console.WriteLine("Приветствую вас в нашем обменнике...");
-            Console.WriteLine("1 - Обмен долларов на рубли");
-            Console.WriteLine("2 - Обмен рублей на доллары");
-            Console.WriteLine("3 - Обмен евро на рубли");
-            Console.WriteLine("4 - Обмен рублей на евро");
-            Console.WriteLine("5 - Обмен юаней на рубли");
-            Console.WriteLine("6 - Обмен рублей на юани");
-            Console.WriteLine("7 - Выход");
+            Console.WriteLine("1 - Обмен долларов на рубли/n2 - Обмен рублей на доллары/n
+                              +"3 - Обмен евро на рубли/n4 - Обмен рублей на евро/n
+                              +"5 - Обмен юаней на рубли/n6 - Обмен рублей на юани/n7 - Выход");
             userInput = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
                 
@@ -65,8 +56,7 @@ namespace ConsoleApp7
                         Console.WriteLine("Ваш баланс " + rub + " рублей " + usd + " долларов");
                         break;
                     case 2:
-                        Console.WriteLine("Обмен рублей на доллары");
-                        Console.WriteLine("Сколько хотите обменять?");
+                        Console.WriteLine("Обмен рублей на доллары/nСколько хотите обменять?");
                         currencyCount = Convert.ToSingle(Console.ReadLine());
                         if (rub >= currencyCount)
                         {
@@ -80,8 +70,7 @@ namespace ConsoleApp7
                         Console.WriteLine("Ваш баланс " + rub + " рублей " + usd + " долларов");
                        break;
                     case 3:
-                        Console.WriteLine("Обмен евро на рубли");
-                        Console.WriteLine("Сколько хотите обменять?");
+                        Console.WriteLine("Обмен евро на рубли/nСколько хотите обменять?");
                         currencyCount = Convert.ToSingle(Console.ReadLine());
                         if (euro >= currencyCount)
                         {
@@ -95,8 +84,7 @@ namespace ConsoleApp7
                         Console.WriteLine("Ваш баланс " + rub + " рублей " + euro + " евро");
                        break;
                     case 4:
-                        Console.WriteLine("Обмен рублей на евро");
-                        Console.WriteLine("Сколько хотите обменять?");
+                        Console.WriteLine("Обмен рублей на евро/nСколько хотите обменять?");
                         currencyCount = Convert.ToSingle(Console.ReadLine());
                         if (rub >= currencyCount)
                         {
@@ -110,8 +98,7 @@ namespace ConsoleApp7
                         Console.WriteLine("Ваш баланс " + rub + " рублей " + euro + " евро");
                         break;
                     case 5:
-                        Console.WriteLine("Обмен юаней на рубли");
-                        Console.WriteLine("Сколько хотите обменять?");
+                        Console.WriteLine("Обмен юаней на рубли/nСколько хотите обменять?");
                         currencyCount = Convert.ToSingle(Console.ReadLine());
                         if (cny >= currencyCount)
                         {
@@ -125,8 +112,7 @@ namespace ConsoleApp7
                         Console.WriteLine("Ваш баланс " + rub + " рублей " + cny + " юаней");
                         break;
                     case 6:
-                        Console.WriteLine("Обмен рублей на юани");
-                        Console.WriteLine("Сколько хотите обменять?");
+                        Console.WriteLine("Обмен рублей на юани/nСколько хотите обменять?");
                         currencyCount = Convert.ToSingle(Console.ReadLine());
                         if (rub >= currencyCount)
                         {
