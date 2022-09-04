@@ -22,21 +22,19 @@ namespace ConsoleApp7
             float cnyToRub = 8.7f;
             float currencyCount;
             int userInput = 0;
+            bool control = true;
             Console.WriteLine("количество рублей");
             rub = Convert.ToSingle(Console.ReadLine());
             Console.WriteLine("количество долларов");
-
             usd = Convert.ToSingle(Console.ReadLine());
             Console.WriteLine("количество евро");
-
             euro = Convert.ToSingle(Console.ReadLine());
             Console.WriteLine("количество юаней");
-
             cny = Convert.ToSingle(Console.ReadLine());
-            bool control = true;
+            
             while (control == true)
             {
-                Console.WriteLine("Приветствую вас в нашем обменнике...");
+            Console.WriteLine("Приветствую вас в нашем обменнике...");
             Console.WriteLine("1 - Обмен долларов на рубли");
             Console.WriteLine("2 - Обмен рублей на доллары");
             Console.WriteLine("3 - Обмен евро на рубли");
@@ -46,6 +44,7 @@ namespace ConsoleApp7
             Console.WriteLine("7 - Выход");
             userInput = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
+                
                 switch (userInput)
                 {
                     case 1:
@@ -63,7 +62,6 @@ namespace ConsoleApp7
                             Console.WriteLine(" Недопустимое кол-во долларов.");
                         }
                         Console.WriteLine("Ваш баланс " + rub + " рублей " + usd + " долларов");
-
                         break;
                     case 2:
                         Console.WriteLine("Обмен рублей на доллары");
@@ -148,9 +146,8 @@ namespace ConsoleApp7
                     case 7:
                         control = false;
                         break;
-
+                     }
                 }
-            }
 
         }
     }
