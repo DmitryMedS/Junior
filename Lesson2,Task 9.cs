@@ -16,7 +16,7 @@ namespace Lesson2.Task9
             int maxNumber = 28;
             int value = rand.Next(minNumber, maxNumber);
             int count = 0;
-            int a=0;
+            int sumNumber=0;
             int closedProgramm = 1000;
             int minNumberCheck = 99;
             int maxNumberCheck = 999;
@@ -30,10 +30,10 @@ namespace Lesson2.Task9
                 }
                 if (count > minNumberCheck && count <= maxNumberCheck)
                 {
-                    a++;
+                    sumNumber++;
                 }
             }
-            Console.WriteLine(a);
+            Console.WriteLine(sumNumber);
            
         }
     }
