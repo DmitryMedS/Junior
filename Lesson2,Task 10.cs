@@ -18,8 +18,7 @@ namespace ConsoleApp12
                 upExtent = upExtent * minNumber;
                    extent++;
                  }
-            Console.WriteLine(number + " < "+upExtent +"  "+ minNumber + "/" +extent+" степени");
-
+            Console.WriteLine(number + " < "+upExtent +"  "+ minNumber + "/" +extent+" степени");}
         }
     }
 }
