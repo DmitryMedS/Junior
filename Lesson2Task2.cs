@@ -5,13 +5,13 @@ namespace Lesson2.Task2
     {
         static void Main(string[] args)
         {
-            string isWorking= "";
+            string userInput= "";
             string exit = "exit";
 
-            while (isWorking != completion)
+            while (userInput != exit)
             {
                 Console.WriteLine("Программа выполняется \nДля выхода введите - exit");
-                isWorking = Console.ReadLine();
+                userInput = Console.ReadLine();
             }
            Console.WriteLine("Программа завершена");
         }
