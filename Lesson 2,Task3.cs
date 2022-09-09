@@ -21,6 +21,7 @@ namespace ConsoleApp5
                     Console.WriteLine(i);
                 } 
             }
+            
             Console.WriteLine(summ);
         }
     }
