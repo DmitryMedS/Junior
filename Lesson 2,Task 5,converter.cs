@@ -17,7 +17,7 @@ namespace ConsoleApp7
             float cnyToRub = 8.7f;
             float currencyCount;
             int userInput = 0;
-            bool control = true;
+            bool isWork = true;
             
             Console.WriteLine("количество рублей");
             rub = Convert.ToSingle(Console.ReadLine());
@@ -28,7 +28,7 @@ namespace ConsoleApp7
             Console.WriteLine("количество юаней");
             cny = Convert.ToSingle(Console.ReadLine());
             
-            while (control == true)
+            while (isWork == true)
             {
             Console.WriteLine("Приветствую вас в нашем обменнике...");
             Console.WriteLine("1 - Обмен долларов на рубли\n2 - Обмен рублей на доллары\n"+
@@ -127,7 +127,7 @@ namespace ConsoleApp7
                         break;
                     case 7:
                         Console.WriteLine("Вы вышли из обменника");
-                        control = false;
+                        isWork = false;
                         break;
                      }
                 }
