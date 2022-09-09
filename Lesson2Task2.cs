@@ -13,6 +13,7 @@ namespace Lesson2.Task2
                 Console.WriteLine("Программа выполняется \nДля выхода введите - exit");
                 userInput = Console.ReadLine();
             }
+            
            Console.WriteLine("Программа завершена");
         }
     }
