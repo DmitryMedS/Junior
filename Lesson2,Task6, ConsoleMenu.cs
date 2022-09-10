@@ -5,23 +5,23 @@ namespace ConsoleApp8
     {
         static void Main(string[] args)
         {
-            string name ="";
-            string color;
-            string password ="";
-            string writeName;
-            string userInput;
             
-            while (control!="exit")
+            string name = "";
+            string password = "";
+            string writeName;
+            string userInput = "";
+
+            while (userInput != "exit")
             {
                 Console.WriteLine("Выберите команду:\n\nУстановить имя - SetName;\n" +
                     "Изменить цвет консоли - ChangeConsoleColor;\nУстановить пароль - SetPassword;\n" +
                     "Вывести имя - WriteName\nВыход из программы - Esc");
-               userInput = Console.ReadLine();
-                
+                userInput = Console.ReadLine();
+
                 switch (userInput)
                 {
                     case "SetName":
-                       name = Console.ReadLine();
+                        name = Console.ReadLine();
                         Console.Clear();
                         Console.WriteLine("Имя установлено...");
                         break;
@@ -36,22 +36,23 @@ namespace ConsoleApp8
                     case "WriteName":
                         Console.WriteLine("Введите пароль!");
                         writeName = Console.ReadLine();
-                        
-                            if (password == writeName)
-                                   {
-                               Console.WriteLine(name);
-                                   }
-                            else
-                                   {
+
+                        if (password == writeName)
+                        {
+                            Console.WriteLine(name);
+                        }
+                        else
+                        {
                             Console.WriteLine("Неверный пароль");
-                                   }
-                           break;
+                        }
+                        break;
                     case "Esc":
-                        control = "exit";
-                           break;
-                    }
-                 Console.WriteLine("Программа запвершена...");
+                        userInput = "exit";
+                        break;
                 }
+                
+                Console.WriteLine("Программа запвершена...");
+              }
            }
        }
    }
