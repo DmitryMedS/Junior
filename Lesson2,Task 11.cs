@@ -9,6 +9,8 @@ namespace ConsoleApp14
             string textInput;
             int nesting = 0;
             int nesting2 = 0;
+            string textInput;
+            
             textInput = Console.ReadLine();
 
             for(int i = 0; i < textInput.Length; i++)
