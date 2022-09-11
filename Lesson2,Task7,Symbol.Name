@@ -5,22 +5,23 @@ namespace ConsoleApp9
     {
         static void Main(string[] args)
         {
-            string symbol;
+             string frameSymbol;
             string name;
-            
+            string frameSymbol2 = "";
+
             Console.WriteLine("Введите символ");
-            symbol = Console.ReadLine(); 
+            frameSymbol = Console.ReadLine();
             Console.WriteLine("Введите имя");
             name = Console.ReadLine();
-            for(int i = 0; i < name.Length+2; i++)
-            {
-                Console.Write(symbol);
-            }
-            Console.WriteLine("\n"+symbol + name + symbol);
+
             for (int i = 0; i < name.Length + 2; i++)
             {
-                Console.Write(symbol);
+                Console.Write(frameSymbol);
+                frameSymbol2 += frameSymbol;               
             }
+
+            Console.WriteLine("\n" + frameSymbol + name + frameSymbol);
+            Console.Write(frameSymbol2);
         }
     }
 }
