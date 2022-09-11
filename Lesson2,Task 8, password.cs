@@ -1,6 +1,4 @@
 ﻿using System;
-
-
 namespace ConsoleApp13
 {
     internal class Program
@@ -9,10 +7,9 @@ namespace ConsoleApp13
         {
             int password = 123456;
             int inputUser;
-            bool isWork = true;
-            int tryCount = 3;
+            int tryCount = 2;
 
-            while (isWork & tryCount > 0)
+            for (int i = tryCount; i >= 0; i--)
             {
                 Console.WriteLine("Введите пароль для доступа к почте: ");
                 inputUser = Convert.ToInt32(Console.ReadLine());
@@ -20,12 +17,11 @@ namespace ConsoleApp13
                 if (inputUser == password)
                 {
                     Console.WriteLine("  Пароль введен верно\n  Тайное сообщение...");
-                    isWork = false;
+                    break;
                 }
-                else 
+                else
                 {
-                    tryCount--;
-                    Console.WriteLine("Hеверный пароль Осталось " +tryCount+ " попыток.. ");   
+                    Console.WriteLine("Hеверный пароль Осталось " + i + " попыток.. ");
                 }
             }
         }
