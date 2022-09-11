@@ -5,20 +5,20 @@ namespace Lesson2.Task9
     {
         static void Main(string[] args)
         {
-            Random rand = new Random();
+             Random random = new Random();
 
-            int minNumber = 0;
             int maxNumber = 28;
-            int value = rand.Next(minNumber, maxNumber);
+            int value = random.Next(0, maxNumber);
             int count = 0;
-            int sumNumber=0;
+            int sumNumber = 0;
             int closedProgramm = 1000;
             int minNumberCheck = 99;
             int maxNumberCheck = 999;
 
-            for(int i = 0; i <= closedProgramm; i++)
+            for (int i = 0; i <= closedProgramm; i++)
             {
                 count += value;
+
                 if (count >= closedProgramm)
                 {
                     break;
@@ -28,8 +28,8 @@ namespace Lesson2.Task9
                     sumNumber++;
                 }
             }
-            Console.WriteLine(sumNumber);
-           
+
+            Console.WriteLine(sumNumber);  
         }
     }
 }
