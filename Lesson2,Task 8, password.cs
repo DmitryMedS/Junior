@@ -5,11 +5,10 @@ namespace ConsoleApp13
     {
         static void Main(string[] args)
         {
-            int password = 123456;
+           int password = 123456;
             int inputUser;
-            int tryCount = 2;
 
-            for (int i = tryCount; i >= 0; i--)
+            for (int tryCount = 2; tryCount >= 0; tryCount--)
             {
                 Console.WriteLine("Введите пароль для доступа к почте: ");
                 inputUser = Convert.ToInt32(Console.ReadLine());
@@ -21,7 +20,7 @@ namespace ConsoleApp13
                 }
                 else
                 {
-                    Console.WriteLine("Hеверный пароль Осталось " + i + " попыток.. ");
+                    Console.WriteLine("Hеверный пароль Осталось " + tryCount + " попыток.. ");
                 }
             }
         }
