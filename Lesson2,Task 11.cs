@@ -27,6 +27,7 @@ namespace ConsoleApp14
                     nesting--;
                 }
             }
+            
             if(nesting == 0)
             {
                 Console.WriteLine(" все верно " + textInput + " вложенность " + nesting2 + " кратная");
