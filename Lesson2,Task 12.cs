@@ -64,6 +64,7 @@ namespace ConsoleApp18
                             bossHealth -= spellPunch;
                                   }
                         }
+                           
                         if (bossHealth <= 0)
                         {
                             bossHealth = 0;
@@ -164,6 +165,7 @@ namespace ConsoleApp18
                     isWork = false;
                     Console.WriteLine("Вы убили босса");
                 }
+                
                 else if (health == 0)
                 {
                     Console.WriteLine("Босс победил ..");
