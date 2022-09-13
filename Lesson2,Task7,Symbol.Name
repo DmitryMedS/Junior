@@ -5,8 +5,7 @@ namespace ConsoleApp9
     {
         static void Main(string[] args)
         {
-             string frameSymbol;
-            string name;
+             string frameSymbol,name;
             string frameSymbol2 = "";
 
             Console.WriteLine("Введите символ");
@@ -16,12 +15,10 @@ namespace ConsoleApp9
 
             for (int i = 0; i < name.Length + 2; i++)
             {
-                Console.Write(frameSymbol);
-                frameSymbol2 += frameSymbol;               
+               frameSymbol2 += frameSymbol;               
             }
 
-            Console.WriteLine("\n" + frameSymbol + name + frameSymbol);
-            Console.Write(frameSymbol2);
+            Console.WriteLine(frameSymbol2+"\n" + frameSymbol + name + frameSymbol+"\n"+frameSymbol2);   
         }
     }
 }
